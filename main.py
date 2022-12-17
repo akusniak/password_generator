@@ -26,7 +26,6 @@ remaining_len = x - nbr_nbr - special_nbr
 for _ in range(remaining_len):
     password += password.join(string.ascii_letters[secrets.randbelow(52)])
 
-print(password)
 temp = list(password)
 random.shuffle(temp)
 final_password = "".join(temp)
