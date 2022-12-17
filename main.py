@@ -8,14 +8,14 @@ x = 16
 
 special_nbr = 1
 while special_nbr <= 1:
-    special_nbr = secrets.randbelow(4)
+    special_nbr = secrets.randbelow(int(x/4))
 special_rand = ""
 for _ in range(special_nbr):
     special_rand += special_rand.join(special[secrets.randbelow(8)])
 
 nbr_nbr = 1
 while nbr_nbr <= 1:
-    nbr_nbr = secrets.randbelow(7)
+    nbr_nbr = secrets.randbelow(int(x/2))
 nbr_rand = ""
 for _ in range(nbr_nbr):
     nbr_rand += nbr_rand.join(string.digits[secrets.randbelow(10)])
